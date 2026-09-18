@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page-header">
+    <p class="eyebrow">PLAN YOUR JOURNEY</p>
+    <h1>Find your next train.</h1>
+    <p>Explore sample railway routes through the NEXRAIL interface.</p>
+</section>
+
+<section class="search-panel">
+
+    <div class="input-group">
+        <label>From</label>
+        <input type="text" placeholder="New Delhi">
+    </div>
+
+    <div class="input-group">
+        <label>To</label>
+        <input type="text" placeholder="Mumbai Central">
+    </div>
+
+    <div class="input-group">
+        <label>Journey Date</label>
+        <input type="date">
+    </div>
+
+    <button class="primary-button">Search</button>
+
+</section>
+
+<section class="results-section">
+    <h2>Popular journeys</h2>
+
+    <div class="train-card">
+        <div>
+            <span class="train-number">NR 12001</span>
+            <h3>New Delhi → Mumbai Central</h3>
+            <p>Rajdhani Express · Daily service</p>
+        </div>
+
+        <div class="train-time">
+            <strong>15h 30m</strong>
+            <span>Overnight journey</span>
+        </div>
+
+        <button class="secondary-button">View</button>
+    </div>
+
+    <div class="train-card">
+        <div>
+            <span class="train-number">NR 13002</span>
+            <h3>New Delhi → Kolkata</h3>
+            <p>Long-distance express · Sample route</p>
+        </div>
+
+        <div class="train-time">
+            <strong>17h 10m</strong>
+            <span>Comfort journey</span>
+        </div>
+
+        <button class="secondary-button">View</button>
+    </div>
+
+    <div class="train-card">
+        <div>
+            <span class="train-number">NR 14003</span>
+            <h3>Mumbai → Ahmedabad</h3>
+            <p>Intercity express · Sample route</p>
+        </div>
+
+        <div class="train-time">
+            <strong>6h 20m</strong>
+            <span>Day journey</span>
+        </div>
+
+        <button class="secondary-button">View</button>
+    </div>
+</section>
+
+{% endblock %}

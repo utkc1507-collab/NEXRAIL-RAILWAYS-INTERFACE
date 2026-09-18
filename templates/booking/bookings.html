@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page-header">
+    <p class="eyebrow">YOUR TRAVEL SPACE</p>
+    <h1>My bookings.</h1>
+    <p>Manage your journeys and keep your travel details organised.</p>
+</section>
+
+<section class="empty-state">
+    <div class="empty-icon">▣</div>
+    <h2>No bookings yet</h2>
+    <p>
+        Your confirmed journeys will appear here once you book a train.
+    </p>
+
+    <a href="{% url 'booking:trains' %}" class="primary-button">
+        Explore Trains →
+    </a>
+</section>
+
+{% endblock %}

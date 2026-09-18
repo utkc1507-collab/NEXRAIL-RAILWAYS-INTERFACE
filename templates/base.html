@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXRAIL | Smart Railway Experience</title>
+
+    <link rel="stylesheet" href="{% static 'booking/style.css' %}">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="{% url 'booking:home' %}" class="brand">
+            NEX<span>RAIL</span>
+        </a>
+
+        <nav>
+            <a href="{% url 'booking:home' %}">Home</a>
+            <a href="{% url 'booking:trains' %}">Trains</a>
+            <a href="{% url 'booking:bookings' %}">My Bookings</a>
+            <a href="{% url 'booking:stations' %}">Stations</a>
+        </nav>
+
+        <a href="{% url 'booking:trains' %}" class="nav-button">
+            Explore Trains
+        </a>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2026 NEXRAIL. A student-built railway experience.</p>
+        <p>Designed with clarity, accessibility and modern web principles.</p>
+    </footer>
+
+</body>
+</html>

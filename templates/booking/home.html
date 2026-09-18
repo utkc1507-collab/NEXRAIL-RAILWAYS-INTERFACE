@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">THE NEXT GENERATION OF RAIL TRAVEL</p>
+
+        <h1>Move further.<br><span>Travel smarter.</span></h1>
+
+        <p class="hero-text">
+            Discover a simpler, faster and more thoughtful way to explore
+            railway journeys across India.
+        </p>
+
+        <div class="hero-actions">
+            <a href="{% url 'booking:trains' %}" class="primary-button">
+                Search Trains →
+            </a>
+
+            <a href="{% url 'booking:stations' %}" class="secondary-button">
+                Explore Stations
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <div class="route-line"></div>
+
+        <div class="route-point">
+            <strong>NDLS</strong>
+            <span>New Delhi</span>
+        </div>
+
+        <div class="route-arrow">→</div>
+
+        <div class="route-point right">
+            <strong>MMCT</strong>
+            <span>Mumbai Central</span>
+        </div>
+
+        <div class="journey-info">
+            <span>Express Journey</span>
+            <strong>15h 30m</strong>
+        </div>
+    </div>
+</section>
+
+<section class="section-heading">
+    <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+    <h2>Everything in one place.</h2>
+</section>
+
+<section class="feature-grid">
+
+    <a href="{% url 'booking:trains' %}" class="feature-card">
+        <div class="feature-icon">↗</div>
+        <h3>Train Search</h3>
+        <p>Explore routes, schedules and available railway journeys.</p>
+        <span>Find your journey →</span>
+    </a>
+
+    <a href="{% url 'booking:bookings' %}" class="feature-card">
+        <div class="feature-icon">▣</div>
+        <h3>My Bookings</h3>
+        <p>Keep your upcoming and previous journeys organised.</p>
+        <span>View bookings →</span>
+    </a>
+
+    <a href="{% url 'booking:stations' %}" class="feature-card">
+        <div class="feature-icon">⌖</div>
+        <h3>Stations & Routes</h3>
+        <p>Discover important stations and popular railway connections.</p>
+        <span>Explore network →</span>
+    </a>
+
+</section>
+
+<section class="quote-section">
+    <p>
+        “A better journey begins with a better experience.”
+    </p>
+</section>
+
+{% endblock %}
