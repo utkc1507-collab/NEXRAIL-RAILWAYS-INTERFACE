@@ -4,6 +4,8 @@
 
 # NEXRAIL
 
+A simple Django-based railway website designed to present railway-related information through a clean interface.   
+
 ### A modular railway travel interface built with Django
 
 A student-built exploration of railway travel experiences through modular web architecture, reusable templates, structured routing, and extensible design.
